@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik';
+}
+
+.section {
+    position: relative; /* Ensure the section itself has a positioning context */
+    height: 100vh; /* Adjust height as needed */
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.backvideo {
+    position: absolute; /* Ensure the video is absolutely positioned */
+    top: 0;
+    left: 0;
+    width: 100%; /* Adjust width as needed */
+    height: 100%; /* Adjust height as needed */
+    object-fit: cover; /* Ensure the video covers the entire container */
+    z-index: -1; /* Place the video behind other content */
+}
+
+img{
+    box-shadow: 10px 10px 10px rgb(2, 1, 16);
+    border-radius: 10%;
+
+}
+
+.content {
+    position: relative; /* Ensure stacking context for content */
+    z-index: 1; /* Ensure content appears above the video */
+    color: white; /* Example text color */
+    text-align: center; /* Center align content */
+    padding: 2rem; /* Adjust padding as needed */
+}
+
+.title {
+    font-size: 4.5rem; /* Example font size for title */
+    padding-top: 15rem; /* Adjust spacing as needed */
+}
+
+.description {
+    font-size: 2rem; /* Example font size for description */
+}
